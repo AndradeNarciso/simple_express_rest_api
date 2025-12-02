@@ -1,9 +1,10 @@
 import express from 'express'
+import userColection  from './db/colection.js'
 
 const app=express()
 
-app.get("/hello", (req,res)=>{
-     res.send("here we go again rs")
+app.get("/user", (req,res)=>{
+     res.send(userColection)
 })
 
 
