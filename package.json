@@ -4,11 +4,15 @@
   "description": "A simple Rest API",
   "main": "app.js",
   "scripts": {
+    "dev": "nodemon app.js",  
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Andrade Narciso",
   "license": "ISC",
   "dependencies": {
     "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
   }
 }
