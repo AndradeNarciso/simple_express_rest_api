@@ -1,6 +1,6 @@
 import express from 'express'
 import userCollection from './db/colection.js'
-import { nextId, getuserById, updateUser } from './util/userUtil.js'
+import { nextId, getuserById, updateUser ,deleteUser} from './util/userUtil.js'
 
 const app = express()
 app.use(express.json())
@@ -54,6 +54,12 @@ app.put("/user/update/:id", (req, res) => {
     }
 
     res.status(202).json(updateUser({ id, Name, Age }))
+})
+
+app.delete("/user/remove/:id", (req, res) => {
+    deleteUser( req.params.id);
+    res.json({message: `user with id ${req.params.id} removed`})
+
 })
 
 
