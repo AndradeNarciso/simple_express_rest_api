@@ -2,9 +2,7 @@ import userCollection from "../db/colection.js";
 
 export function nextId() { return userCollection.length +1 }
 
-export function getuserById(id) {
-    return userCollection.find(user => user.id === Number(id))
-}
+
 
 export function updateUser(requestUser) {
     const { Name, Age, id } = requestUser

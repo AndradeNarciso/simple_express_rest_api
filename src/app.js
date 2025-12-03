@@ -1,6 +1,6 @@
 import express from 'express'
 import userCollection from './db/colection.js'
-import { nextId, getuserById, updateUser, deleteUser } from './util/userUtil.js'
+import { nextId, getuserById, updateUser, deleteUser } from './service/userService.js'
 
 const app = express()
 app.use(express.json())
