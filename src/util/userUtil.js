@@ -13,7 +13,7 @@ export function updateUser(requestUser) {
         userCollection[id-1]={ id, Name, Age }
         return
     }
-    return "There is no any User with that id"
+    return `There is no any User with that id`
 
 }
 export function deleteUser(id){
