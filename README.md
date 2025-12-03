@@ -18,9 +18,9 @@ This project demonstrates a simple Node.js application connected to PostgreSQL u
    DB_PORT=5435
    DB_HOST=localhost
 
-2. ***Run: ***
-docker-compose up -d
+2. **Start the PostgreSQL container** by running this command from the project root (where `docker-compose.yml` is located):
 
 
-3. ***Run the server***
-node  server.js
+
+3. **Run the Node.js server**:
+
