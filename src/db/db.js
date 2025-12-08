@@ -13,4 +13,13 @@ const db = pgp({
     password: process.env.DB_PASS
 });
 
+db.one('SELECT $1 AS value', 123)
+    .then((data) => {
+        console.log(`DB connection done`)
+
+    })
+    .catch((error) => {
+        console.log('ERROR:', error)
+    })
+
 export default db;
